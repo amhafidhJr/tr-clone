@@ -1,3 +1,13 @@
+/**
+ * @author [abdulhalim.hafidh]
+ * @email [abdulhalim.hafidh@tra.go.tz]
+ * @create date 2023-09-9 20:03:23
+ * @modify date 2023-09-9 20:03:23
+ * @desc [javascript file for menu navigation and image]
+ */
+
+
+
 function toggleMenu() {
     var x = document.getElementById("myMenu");
     if (x.style.display === "block") {
