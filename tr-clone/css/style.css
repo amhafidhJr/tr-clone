@@ -1,0 +1,432 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Roboto&family=Roboto+Mono:wght@700&family=Roboto+Slab:wght@300&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: "Roboto", "sans-serif";
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+input[type="text"] {
+    border: solid 1px #aaa;
+    border-radius: 3px;
+    height: 24px;
+    font-size: 12px;
+    padding: 4px;
+}
+
+button {
+    height: 24px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #fff;
+    background-color: rgb(68, 68, 68);
+    padding: 0 6px;
+}
+
+.wrap {
+    width: 954px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 10px auto;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.header {
+    padding-bottom: 10px;
+    border-bottom: solid 1px #aaa;
+}
+
+.navigation {
+    padding-top: 10px;
+    /* overflow: hidden; */
+
+}
+
+.navigation>ul {
+    float: left;
+
+}
+
+
+
+
+
+.navigation>ul>li {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.sub-menu {
+    width: 160px;
+    height: 210px;
+    background-color: #fff;
+    position: absolute;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    display: none;
+    top: 20px
+}
+
+.sub-menu li {
+    display: block;
+    padding: 8px;
+}
+
+.sub-menu li a {
+    color: #333 !important;
+}
+
+.sub-menu li:hover {
+    background-color: gold;
+}
+
+.sub-menu li:hover a {
+    color: #000 !important;
+}
+
+.navigation>ul>li:hover .sub-menu {
+    display: block;
+}
+
+
+.navigation>ul>li:hover {
+    background-color: #aaa;
+}
+
+.navigation>ul>li:hover a {
+    color: #fff;
+}
+
+.navigation .search {
+    float: right;
+}
+
+.wrap_main {
+    margin-top: 10px;
+    border-top: solid 1px #ccc;
+    padding: 10px 0;
+}
+
+.wrap_main>div {
+    float: left;
+}
+
+.wrap_main .left,
+.wrap_main .right {
+    width: 25%;
+}
+
+.wrap_main .main {
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.box {
+    border: solid 1px #FDEE02;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.box>a {
+    padding: 8px;
+}
+
+
+
+.clear {
+    clear: both;
+}
+
+.w100 {
+    width: 100px;
+}
+
+.w100p {
+    width: 100%;
+}
+
+.w50 {
+    width: 50px;
+}
+
+.w80 {
+    width: 80px;
+}
+
+
+.align-center {
+    text-align: center;
+}
+
+.lh-18 {
+    line-height: 18px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.box>h2 {
+    background-color: yellow;
+    padding: 8px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.box>ul>li>img {
+    vertical-align: middle;
+    padding: 3px;
+}
+
+
+
+
+
+
+.box>ul>li:hover {
+    background-color: #edf2ef;
+}
+
+.box>ul>li:hover a {
+    color: #02414f;
+}
+
+.box>ul>li {
+    padding: 2px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    cursor: auto;
+}
+
+p>span>a:hover {
+    text-decoration: underline;
+}
+
+dl {
+    margin-bottom: 18px;
+}
+
+dt,
+dd {
+    line-height: 18px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 9px;
+}
+
+dt {
+    float: left;
+    width: 120px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+dd {
+    margin-right: 10px;
+}
+
+.footer {
+    font-family: 'Roboto', sans-serif;
+}
+
+.pull-right {
+    float: right;
+}
+
+
+.container {
+    width: 954px;
+    height: auto;
+
+    margin: 10px auto;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #F4F6F7;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Hamburger menu icon styles */
+/* .menu-icon {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: silver; /* Silver color for the bars */
+/* } */
+
+/* Mobile menu styles */
+/* .mobile-menu {
+    display: none;
+    background-color: #fff; /* Adjust background color as needed */
+/* position: absolute; */
+/* top: 50px; Adjust the distance from the top */
+/* left: 0; */
+/* width: 100%; */
+/* z-index: 999; */
+/* }  */
+
+/* .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+} */
+
+/* .mobile-menu li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc; /* Add a border between items */
+/* }   */
+
+/* .hidden {
+    display: block; 
+} */
+
+
+@media screen and (max-width: 768px) {
+
+    .wrap {
+        width: 100%;
+    }
+
+
+    .navigation ul {
+        display: none;
+    }
+
+
+    .img_header {
+        width: 100%;
+    }
+
+    .wrap_main .left,
+    .wrap_main .right,
+    .wrap_main .main {
+        width: 100%;
+    }
+
+    .footer .container{
+        width: 100%;
+        margin-bottom: 40%;
+    }
+
+}
+
+/* Default styles for larger screens */
+.navigation ul {
+    float: left;
+}
+
+.navigation a.icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation ul {
+        display: none;
+        width: 100%;
+    }
+
+    .navigation ul li {
+        padding: 10px 0; /* Adjust spacing for smaller screens */
+        width: 100%; /* Make menu items take the full width */
+    }
+    
+
+    .navigation.responsive {
+           display: grid;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .navigation li a {
+        display: block;
+        width: 400px;
+        padding: 2px;
+    }
+
+    .navigation a.icon {
+        display: grid;
+        margin-right: 20px;
+    }
+
+    #myMenu ul li a {
+        width: 100%;
+
+    }
+    
+    /* Add this CSS to make the menu items stack vertically */
+    .navigation.responsive ul {
+        display: block;
+    }
+}
+
+
+
+/* Media query for screens larger than 768px */
+@media (min-width: 769px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    .navigation ul {
+        display: block;
+        /* Display the regular menu for larger screens */
+    }
+}
